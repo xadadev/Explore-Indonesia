@@ -96,7 +96,7 @@ document.addEventListener("scroll", () => {
 
 // show the back to top btn when it reach the #section3
 const backTop = document.querySelector(".back--top");
-const section3 = document.querySelector("#section3");
+const section3 = document.querySelector("#our--secret");
 
 window.addEventListener("scroll", function() {
   if (window.scrollY > section3.offsetTop) {
