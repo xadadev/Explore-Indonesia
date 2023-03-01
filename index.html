@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/venobox@2.0.4/dist/venobox.min.css">
@@ -17,6 +21,7 @@
 </head>
 
 <body>
+  <main>
   <div class="hero--bg">
     <div class="overlay">
       <div class="container">
@@ -58,22 +63,12 @@
       </div>
       <section id="hero">
 
-        <div class="progress-container">
-          <div class="progress-bar"></div>
-        </div>
         <div class="hero--title">
           <h1>explore <br> indonesia</h1>
           <a href=""><button class="hero--cta">Start travelling</button></a>
         </div>
 
-
-        <div class="week">
-          <span>Fb</span>
-          <span>In</span>
-          <span>Tw</span>
-        </div>
         <div class="hero--content">
-
           <div class="video--content">
             <div class="box box1">
               <a href="#">
@@ -108,12 +103,29 @@
             </div>
           </div>
         </div>
+
+
+
+
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+
+        
+        <div class="week">
+          <span>Fb</span>
+          <span>In</span>
+          <span>Tw</span>
+        </div>
+
+        
+      </div>
       </section>
     </div>
     <!-- ------------------------------- -->
     <!--             ARTICLE             -->
     <!-- ------------------------------- -->
-    <section id="article">
+    <section id="article" >
       <div class="article--overlay">
         <div class="container ptb">
 
@@ -135,7 +147,7 @@
 
 
             <div class="article--content">
-              <h3>Perfect beaches exude relaxation and fun</h3>
+              <h3>Perfect beaches exude relaxation</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.
               </p>
               <a href="#" class="article--cta">Learn More</a>
@@ -155,7 +167,7 @@
 
     <section id="our--secret">
       <div class="secret--overlay">
-        <div class="container">
+        <div class="container" >
           <div class="slider--title">
             <h3>Explore Our Secrets</h3>
           </div>
@@ -163,7 +175,7 @@
             <div class="splide" role="group" aria-label="Splide Basic HTML Example">
               <div class="splide__track">
                 <ul class="splide__list">
-                  <li class="splide__slide">
+                  <li class="splide__slide" >
                     <img src="./images/our-secret/slider-1.png" alt="">
                   </li>
                   <li class="splide__slide">
@@ -220,7 +232,8 @@
     <!--               MAP               -->
     <!-- ------------------------------- -->
     <section id="map">
-
+        <img class="map--img1" src="./images/map/lines-1.png" alt="">
+        <img class="map--img2"src="./images/map/lines-2.png" alt="">
       <div class="container">
         <div class="map--content">
           <h3>Our hills and valleys are like nothing you’ve seen.</h3>
@@ -239,9 +252,9 @@
 
       <div class="bg--overlay">
 
-        <div class="container--vid">
+        <div class="container--vid" >
           <h3 class="title--video">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h3>
-          <div class="video--player">
+          <div class="video--player" >
             <video id="my--video" class="video-js" controls preload="auto" poster="./images/video/video-player-img.png"
               data-setup="{}">
               <source src="./images/video/video-1.mp4" type="video/mp4" />
@@ -412,8 +425,7 @@
 
   <p id="current-section"></p>
 
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -425,6 +437,15 @@
       perPage: 3,
       perMove: 1,
       gap: 20,
+      breakpoints: {
+		860: {
+			perPage: 2,
+		},
+    450: {
+      perPage: 1,
+    },
+  }
+  
     });
 
     splide.mount();
@@ -444,6 +465,7 @@
     
     });
   </script>
+  </main>
 </body>
 
 </html>

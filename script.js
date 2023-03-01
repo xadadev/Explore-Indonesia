@@ -1,7 +1,6 @@
 /* ---------------------------------- */
 /*             MOBILE MENU            */
 /* ---------------------------------- */
-
 var hamburger = document.querySelector(".humburger");
 var siteNav = document.querySelector(".header--navigation");
 
@@ -115,3 +114,15 @@ back2Top.addEventListener("click", function() {
     hero.scrollIntoView({ behavior: 'smooth' });
 });
 /* -------------- ENDS -------------- */
+gsap.from(".box", {
+  opacity: 0, 
+  y: 100, 
+  duration: 4
+});
+
+
+gsap.from('.hero--title', { opacity: 0, y: -50, stagger: 0.2, duration: 4 });
+
+
+
+
