@@ -1,5 +1,5 @@
 
-# Explore Indonesia |Ttour Guide company
+# Explore Indonesia |Tour Guide company
 
 Explore Indonesia is a fictional tour guide company that offers personalized tours and experiences for travelers visiting Indonesia. 
 website was designed to showcase the beauty of Indonesia and provide information about the country. The website was built using HTML, CSS, JavaScript, VenoBox, GSAP, Google Fonts, Video.js, and Splide.js.
