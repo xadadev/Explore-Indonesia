@@ -57,7 +57,7 @@ https://imgur.com/a/vPdlzf0
 4.  HEADER  
 #
       4.1 SEARCH ICON 
-      4.2 PROGRASS BAR
+      4.2 PROGRESS BAR
 5.  HERO
 6.  ARTICLE 
 7.  FIND OUR SECRET 
@@ -72,7 +72,26 @@ https://imgur.com/a/vPdlzf0
       14.1 HAMBURGER MENU 
       14.2 MEDIA QUERIES FOR MOBILE 
       14.3 TABLET MEDIA QUIRES 
+## Dependencies
+
+- VenoBox: a responsive jQuery lightbox plugin
+- GSAP: a JavaScript animation library
+- Google Fonts: a library of free and easy-to-use web fonts
+- Video.js: an open-source HTML5 video player
+- Splide.js: a lightweight and responsive slider plugin
+## Authors
+
+- [xada](https://xada.netlify.app/)
+
+
+
+
+## Credits
+- https://www.freefigmatemplates.com/gallery/free-figma-travel-holiday-landing-page
+ - All images used on this website were obtained from Unsplash
+- The fonts used on this website were obtained from Google Fonts
+- The VenoBox, GSAP, Video.js, and Splide.js libraries were used to add interactivity and animation to the website.
+
 ## Demo
 
 https://explore-indonesia-app.netlify.app/
-
