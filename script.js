@@ -63,7 +63,6 @@ function j(t, e, o) {
   });
 }
 
-
 /* -------------- ENDS -------------- */
 
 /* ---------------------------------- */
@@ -82,22 +81,30 @@ document.addEventListener("scroll", () => {
   const currentPosition = window.scrollY + window.innerHeight / 2;
 
   sections.forEach((section, index) => {
-    if (currentPosition >= section.offsetTop && currentPosition < section.offsetTop + section.offsetHeight) {
+    if (
+      currentPosition >= section.offsetTop &&
+      currentPosition < section.offsetTop + section.offsetHeight
+    ) {
       currentSectionIndex = index;
     }
   });
 
-  progressBar.style.height = `${(currentSectionIndex + 1) * (100 / sections.length)}%`;
+  progressBar.style.height = `${
+    (currentSectionIndex + 1) * (100 / sections.length)
+  }%`;
   currentSection.innerHTML = `0 ${currentSectionIndex + 1}`;
 });
 /* -------------- ENDS -------------- */
 
+/* ############################################ */
+/*                  BACK TO TOP                 */
+/* ############################################ */
 
 // show the back to top btn when it reach the #section3
 const backTop = document.querySelector(".back--top");
 const section3 = document.querySelector("#our--secret");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   if (window.scrollY > section3.offsetTop) {
     backTop.style.display = "block";
   } else {
@@ -110,18 +117,21 @@ window.addEventListener("scroll", function() {
 const back2Top = document.querySelector(".back--top");
 const hero = document.querySelector("#hero");
 
-back2Top.addEventListener("click", function() {
-    hero.scrollIntoView({ behavior: 'smooth' });
+back2Top.addEventListener("click", function () {
+  hero.scrollIntoView({ behavior: "smooth" });
 });
 /* -------------- ENDS -------------- */
+
+/* ############################################ */
+/*        GSAP ANIMATION FOR HERO SECTION       */
+/* ############################################ */
 gsap.from(".box", {
-  opacity: 0, 
-  y: 100, 
-  duration: 4
+  opacity: 0,
+  y: 100,
+  duration: 4,
 });
 
-
-gsap.from('.hero--title', { opacity: 0, y: -50, stagger: 0.2, duration: 4 });
-
+gsap.from(".hero--title", { opacity: 0, y: -50, stagger: 0.2, duration: 4 });
 
 
+/* ------------------- Ends ------------------- */
