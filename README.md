@@ -74,5 +74,5 @@ https://imgur.com/a/vPdlzf0
       14.3 TABLET MEDIA QUIRES 
 ## Demo
 
-https://renty-app.netlify.app/
+https://explore-indonesia-app.netlify.app/
 
